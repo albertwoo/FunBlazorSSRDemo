@@ -5,3 +5,10 @@ Demoes for how to use [Fun.Blazor](https://github.com/slaveOftime/Fun.Blazor) wi
 ## How to run
 
     dotnet watch run
+
+Then access http://localhost:5000/ssr/demo1
+
+## Publish AOT
+
+    dotnet publish -c Release -r win-x64
+    

@@ -2,6 +2,11 @@
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
+		<PublishAot>true</PublishAot>
+		<PublishLzmaCompressed>true</PublishLzmaCompressed>
+		<UseSystemResourceKeys>true</UseSystemResourceKeys>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<StripSymbols>true</StripSymbols>
 	</PropertyGroup>
 	
 	<ItemGroup>
@@ -13,6 +18,7 @@
 		<PackageReference Include="Fun.Blazor.Server" Version="3.1.0-*" />
 		<PackageReference Include="Fun.Blazor" Version="3.1.0-*" />
 		<PackageReference Include="Fun.Htmx" Version="3.1.0-*" />
+		<PackageReference Include="PublishAotCompressed" Version="1.0.2" />
 	</ItemGroup>
 
 </Project>
