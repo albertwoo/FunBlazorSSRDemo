@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Compile Include="Demoes.fs" />
+		<Compile Include="Startup.fs" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Fun.Blazor.Server" Version="3.1.0-*" />
+		<PackageReference Include="Fun.Blazor" Version="3.1.0-*" />
+		<PackageReference Include="Fun.Htmx" Version="3.1.0-*" />
+	</ItemGroup>
+
+</Project>
