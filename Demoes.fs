@@ -37,17 +37,17 @@ let demoItems =
             if items.Length = 0 then
                 progress.create ()
             else
-                ul.create [
+                ul {
                     for item in items do
                         li {
                             style { color "green" }
                             $"item - {item}"
                         }
-                ]
+                }
         }
     )
 
-let htmxDemoView1 = div { h2 { "htmx view" } }
+let htmxDemoView1 = div { h3 { "htmx view" } }
 
 let ssrPage1 =
     layout (
