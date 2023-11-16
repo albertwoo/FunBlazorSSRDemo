@@ -7,6 +7,14 @@ open Microsoft.AspNetCore.Builder
 open Microsoft.Extensions.DependencyInjection
 open Fun.Blazor
 open Fun.Htmx
+open Microsoft.AspNetCore.Components.Forms
+open Microsoft.AspNetCore.Components.Web
+
+let attrs =
+    domAttr {
+        "id", 123
+    }
+let x = html.blazor<EditForm>(RenderMode.InteractiveServer, attrs)
 
 let layout (node: NodeRenderFragment) = html' {
     head {
